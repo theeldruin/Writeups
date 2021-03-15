@@ -61,7 +61,7 @@ https://github.com/DidierStevens/DidierStevensSuite/blob/master/decode-vbe.py
 
 Try to run it:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-1.png?raw=true)
+![alt text](./img/nahamcon2021-1.png?raw=true)
 
 Hummmmm, nothing? Let’s check the hex again….
 
