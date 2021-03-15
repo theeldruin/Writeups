@@ -84,22 +84,22 @@ Hummmmm, nothing? Let’s check the hex again….
 
 Ok, those bytes "***5e23 7e40***" represent the end of the file…. so they are in the wrong place. Let’s remove them and try to run again the decoder
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-2.png?raw=true)
+![alt text](./img/nahamcon2021-2.png?raw=true)
 
 
 ## easb64
 Download and open the file
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-3.png?raw=true)
+![alt text](./img/nahamcon2021-3.png?raw=true)
 
 Looks like a base64 file, let’s open CyberChef an try to decode:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-4.png?raw=true)
+![alt text](./img/nahamcon2021-4.png?raw=true)
 
 Nop….. hummm….. the file name looks inverted. Maybe the code is too. Let’s try to invert it and decode again
 https://www.invertexto.com/inverter-texto ---> Website to invert the text
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-5.png?raw=true)
+![alt text](./img/nahamcon2021-5.png?raw=true)
 
 Success, just invert the text again and you have the flag
 
@@ -107,16 +107,16 @@ Success, just invert the text again and you have the flag
 ## Pollex
 Download the file pollex and open
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-6.png?raw=true)
+![alt text](./img/nahamcon2021-6.png?raw=true)
 
 Ok, its a gigantic HEX file. However it started with FFD8, so probably is a JPG file. Let’s try to open it
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-7.png?raw=true)
+![alt text](./img/nahamcon2021-7.png?raw=true)
 
 Hummm, maybe there is some hide information in it. Let’s use an EXIFTOOL to analyze:
 http://exif.regex.info/exif.cgi
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-8.png?raw=true)
+![alt text](./img/nahamcon2021-8.png?raw=true)
 
 Success!
 
@@ -127,7 +127,7 @@ https://ctf.nahamcon.com/rules
 
 Ok… nothing interesting….. maybe the source code reveal something:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-9.png?raw=true)
+![alt text](./img/nahamcon2021-9.png?raw=true)
 
 Ok….that's was easy :D
 
@@ -136,28 +136,28 @@ Ok….that's was easy :D
 The step showed bellow is the same to hte Challengs: Red-Team-Village,UHC-BR,Live-Recon-Village,IOT-Village,HTB-Village,INE-Carrer-Corner
 Just follow the links:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-10.png?raw=true)
+![alt text](./img/nahamcon2021-10.png?raw=true)
 
 
 ## #NahamCon2021
 Let’s search the #NahamCon2021+flag in google:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-11.png?raw=true)
+![alt text](./img/nahamcon2021-11.png?raw=true)
 
 ## The Mission
 Let’s go to THE MISSION page: https://ctf.nahamcon.com/mission
 Look the source code:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-12.png?raw=true)
+![alt text](./img/nahamcon2021-12.png?raw=true)
 
 ## Bionic
 Visite the webpage and check the source….. but is nothing there. Lets use FFUF to search for hide pages:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-13.png?raw=true)
+![alt text](./img/nahamcon2021-13.png?raw=true)
 
 Hummmm robots.txt…. let’s take a look:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-14.png?raw=true)
+![alt text](./img/nahamcon2021-14.png?raw=true)
 
 We got the flag AND a new page
 
@@ -165,32 +165,32 @@ We got the flag AND a new page
 Let’s follow the link: https://www.nahamcon.com/merch
 Look the source:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-15.png?raw=true)
+![alt text](./img/nahamcon2021-15.png?raw=true)
 
 
 ## Buzz
 Ok, let’s download the file and give a look at it
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-16.png?raw=true)
+![alt text](./img/nahamcon2021-16.png?raw=true)
 
 Ok, another HEX. Let’s “unhex” it:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-17.png?raw=true)
+![alt text](./img/nahamcon2021-17.png?raw=true)
 
 Nothing useful…. let’s search for that bytes 1fd9:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-18.png?raw=true)
+![alt text](./img/nahamcon2021-18.png?raw=true)
 
 we found something about a .Z file. Let’s try to change de file extension to .Z:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-19.png?raw=true)
+![alt text](./img/nahamcon2021-19.png?raw=true)
 
 Unzip doesn’t work, so let’s open the directory and check the file:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-20.png?raw=true)
+![alt text](./img/nahamcon2021-20.png?raw=true)
 
 Inside we found another “buzz” file, let’s open it:
 
-![alt text](https://github.com/theeldruin/images/blob/main/nahamcon2021-21.png?raw=true)
+![alt text](./img/nahamcon2021-21.png?raw=true)
 
 Touche! =D
