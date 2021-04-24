@@ -22,7 +22,7 @@ We found some tables with the command: “select * from information_schema.table
 Doing a research we can find something about xp_cmdshell.  
 ![alt text](./img/archetype06.png?raw=true)
 
-Wow, let’s try to obtain more info about the system (if need to activate xp_cmdshell try this link)  
+Wow, let’s try to obtain more info about the system (if need to activate xp_cmdshell try this [link](https://stackoverflow.com/questions/5131491/enable-xp-cmdshell-sql-server))  
 ![alt text](./img/archetype07.png?raw=true)
 
 Now let’s create as reverse shell ps1 file:
