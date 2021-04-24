@@ -14,7 +14,8 @@ Hummmm, this sounds interesting. Let’s try to access the url ../cdn-cgi/login
 
 Ok, it’s a login page. However we don’t have a clue about the credential.
 Since this website is from MegaCorp (MegaCorp Automotive), maybe the credential found in the ARCHETYPE machine works here  
-administrator:MEGA*********.....FAIL!!!
+administrator:MEGA*********.....FAIL!!!  
+
 Hummmm this credential is not working….. maybe admin:MEGA*******.....SUCCESS!!
 
 ## Exploit  
