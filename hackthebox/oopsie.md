@@ -13,21 +13,20 @@ Hummmm, this sounds interesting. Let’s try to access the url ../cdn-cgi/login
 ![alt text](./img/oopsie04.png?raw=true)  
 
 Ok, it’s a login page. However we don’t have a clue about the credential.
-Since this website is from MegaCorp (MegaCorp Automotive), maybe the credential found in the ARCHETYPE machine works here
-administrator:MEGA********
-
+Since this website is from MegaCorp (MegaCorp Automotive), maybe the credential found in the ARCHETYPE machine works here  
+administrator:MEGA*********.....FAIL!!!
 Hummmm this credential is not working….. maybe admin:MEGA*******.....SUCCESS!!
 
 ## Exploit  
 ![alt text](./img/oopsie05.png?raw=true)  
 
-Hummm we have a Upload option….. maybe we can upload a reverse shell to the server. Let’s try...  
+Hummm we have an Upload option….. maybe we can upload a php reverse shell page to the server. Let’s try...  
 ![alt text](./img/oopsie06.png?raw=true)  
 
 ….. super admin? WTF?….. ok ok, let’s chill out. Look’s like we need a higher privilege user to do that. Let’s check the other options…….that ACCOUNT option in the Menu looks curious, let’s check it  
 ![alt text](./img/oopsie07.png?raw=true)  
 
-Ok, the ID param in the url get my attention. Let’s try to change it  
+Ok, the ID param in the url got my attention. Let’s try to change it  
 Trying change it to 2 or 3 didn't work, but with 4…...  
 ![alt text](./img/oopsie08.png?raw=true)  
 
@@ -36,7 +35,7 @@ Let’s get some information first…..
 First, the server identify the user logged with 2 cookies  
 ![alt text](./img/oopsie09.png?raw=true)  
 
-Those are identical to the ACCESS ID and NAME in the page with ID=1. So maybe we can change the user changing those values to the other user… let’s continue our investigation  
+Those are identical to the ACCESS ID and NAME in the page with ID=1. So maybe we can change the user changing those values to the values of other user… let’s continue our investigation  
 When we set an ID that has an user the important line in the source code is this  
 ![alt text](./img/oopsie10.png?raw=true)  
 
@@ -97,7 +96,9 @@ Ok, so it run the cat command. However it doesn’t set the path, so we can crea
 
 So if we run bugtracker now it will execute this script in /tmp with root privilege and should open an root shell  
 ![alt text](./img/oopsie27.png?raw=true)  
-
 PWNED!!!  
+
+Now don't forget to remove the /tmp folder from the PATH to use the correct cat app ;D  
+export PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin  
 
 ## Discoveries  
