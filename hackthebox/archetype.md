@@ -1,4 +1,9 @@
-## Recon/Enumeration  
+# [Recon-Enumeration](#recon-enumeration)
+# [Exploit](#exploit)
+# [Privesc](#privesc)
+# [Discoveries](#discoveries)
+
+## Recon-Enumeration  
 nmap -A 10..10.10.27  
 ![alt text](./img/archetype01.png?raw=true)  
 Port 139 and 445 are open, so SMB is active. Let's try connect to it with guest creds 
