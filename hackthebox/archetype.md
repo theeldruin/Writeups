@@ -1,7 +1,7 @@
 ## Recon/Enumeration  
 nmap -A 10..10.10.27  
 ![alt text](./img/archetype01.png?raw=true)  
-Port 139 and 445 are open, so SMB is active. Let's try to connect ir with guest creds 
+Port 139 and 445 are open, so SMB is active. Let's try connect to it with guest creds 
 ![alt text](./img/archetype02.png?raw=true)  
 The folders needed a credential to access, however the backups folder didn't...
 ![alt text](./img/archetype03.png?raw=true)  
