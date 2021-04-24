@@ -1,7 +1,7 @@
-# [Recon-Enumeration](#recon-enumeration)
-# [Exploit](#exploit)
-# [Privesc](#privesc)
-# [Discoveries](#discoveries)
+* [Recon-Enumeration](#recon-enumeration)
+* [Exploit](#exploit)
+* [Privesc](#privesc)
+* [Discoveries](#discoveries)
 
 ## Recon-Enumeration  
 nmap -A 10..10.10.27  
