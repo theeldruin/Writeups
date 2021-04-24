@@ -43,7 +43,7 @@ A shell must appear in the nc listening port.
 Since we are running Powershell, let’s see the command history executed in it  
 ![alt text](./img/archetype08.png?raw=true)  
 
-Ok, another credential. Let’s try to use it wit smbclient  
+Ok, another credential. Let’s try to use it with smbclient  
 ![alt text](./img/archetype09.png?raw=true)
 
 ## Discovery
