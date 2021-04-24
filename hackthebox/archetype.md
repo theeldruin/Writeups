@@ -46,5 +46,8 @@ Since we are running Powershell, let’s see the command history executed in it
 Ok, another credential. Let’s try to use it with smbclient  
 ![alt text](./img/archetype09.png?raw=true)
 
-## Discovery
+## Discoveries
+Credentials:  
+- administrator:MEGACORP_4dm1n!!  
+
 
