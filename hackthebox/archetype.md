@@ -48,6 +48,6 @@ Ok, another credential. Let’s try to use it with smbclient
 
 ## Discoveries
 Credentials:  
-- administrator:MEGACORP_4dm1n!!  
+- administrator:MEGA*******
 
 
