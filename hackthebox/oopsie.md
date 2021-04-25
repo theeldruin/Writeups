@@ -103,4 +103,4 @@ Now don't forget to remove the /tmp folder from the PATH to use the correct cat 
 export PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin  
 
 ## Discoveries  
-![alt text](./img/oopsie28.png?raw=true)  
+![alt text](./img/oopsie28.PNG?raw=true)  
