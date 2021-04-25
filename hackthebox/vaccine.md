@@ -16,7 +16,7 @@ Let’s try to use the credentials found in the OOPSIE machine
 Here we can only find one zip file. Let’s get it and try to unzip  
 ![alt text](./img/vaccine04.PNG?raw=true)  
 
-This was too easy…..however this password can be easily cracked with John…  
+This was unexpected…..however this password can be easily cracked with John…  
 ![alt text](./img/vaccine05.PNG?raw=true)  
 
 Using the password we can unzip the file and get 2 other files: index.php and style.css  
