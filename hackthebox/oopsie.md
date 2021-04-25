@@ -92,14 +92,14 @@ Much better, now let’s try that bugtracker again...
 Looks like this app make some research and show the output, but that “Synchronized browsing is disabled” can indicate that it’s offline... so where he search for the ID we input? Maybe strings can help us with that…  
 ![alt text](./img/oopsie25.png?raw=true)  
 
-Ok, so it run the cat command. However it doesn’t set the path, so we can create an script with that name, but that will execute another command inside….. let’s try it  
+Ok, so it run the cat command. However it doesn’t set the path, so we can create an script with the name "cat" and the "/bin/bash" command inside. When the bugtracker be runned it will run the /bin/bash with root privilege, giving us a root shell….. let’s try it  
 ![alt text](./img/oopsie26.png?raw=true)  
 
-So if we run bugtracker now it will execute this script in /tmp with root privilege and should open an root shell  
+So if we run bugtracker now it will execute this script in /tmp with root privilege and should open a root shell  
 ![alt text](./img/oopsie27.png?raw=true)  
 PWNED!!!  
 
-Now don't forget to remove the /tmp folder from the PATH to use the correct cat app ;D  
+Now don't forget to remove the /tmp folder from the PATH to use the correct cat command ;D  
 export PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin  
 
 ## Discoveries  
