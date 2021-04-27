@@ -9,7 +9,7 @@
 sudo masscan -p1-65535 10.10.10.55 -e tun0 --rate=1000  
 ![alt text](./img/included01.PNG?raw=true)  
 
-Ok, the url look’s vulnerable to LFI  
+Ok, the url look’s vulnerable to LFI. So let's test it  
 ![alt text](./img/included02.PNG?raw=true)  
   
 ![alt text](./img/included03.PNG?raw=true)  
