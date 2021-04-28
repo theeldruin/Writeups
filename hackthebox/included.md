@@ -43,7 +43,7 @@ HABEMUS SHELL \o/\
 ## Privesc  
 Run this command to get a better shell -> python3 -c 'import pty;pty.spawn("/bin/bash")'
 
-We are logged as www-data and if we don’t have permission to read the user.txt (inside mike’s folder). So let’s try to privesc  
+We are logged as www-data and we don’t have permission to read the user.txt (inside mike’s folder). So let’s try to privesc  
 ![alt text](./img/included09.PNG?raw=true)  
 
 Since this is a continuation of the PATHFINDER machine, let’s try to log as mike with the password found on that machine  
