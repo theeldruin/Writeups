@@ -78,7 +78,7 @@ id
   
 It’s a little ugly, but is a root shell
 
-To catch the flag just go to /mnt/root/root 
+To catch the flag just go to /mnt/root/root  
 ![alt text](./img/included13.PNG?raw=true)  
 
 ## Discoveries
