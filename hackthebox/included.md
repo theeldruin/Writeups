@@ -59,13 +59,14 @@ For a better explanation check this [link](https://www.hackingarticles.in/lxd-pr
 > In your machine:  
 git clone  https://github.com/saghul/lxd-alpine-builder.git  
 cd lxd-alpine-builder  
-./build-alpine  
+./build-alpine
+check the name of the created file
 sudo python3 -m http.server 80  
 
 > On target machine  
 cd /tmp  
-wget http://192.168.1.107:8000/apline-v3.10-x86_64-20191008_1227.tar.gz  
-lxc image import ./alpine-v3.10-x86_64-20191008_1227.tar.gz --alias myimage  
+wget http://YOUR_IP/CREATED_ALPINE_FILE
+lxc image import ./CREATED_ALPINE_FILE --alias myimage  
 lxc image list  
 lxc init myimage ignite -c security.privileged=true  
 lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=true  
