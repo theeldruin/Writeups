@@ -43,7 +43,7 @@ Ok, that /var/backups can be useful
 Wow, shadow? And readable? Ok….  
 ![alt text](./img/guard10.PNG?raw=true)  
 
-Now we copy the root hash to a hash.txt file and use hashcat to break it
+Now we copy the root hash to a hash.txt file and use hashcat to break it  
 hashcat -m 1800 -o cracked hash.txt ~/wordlists/rockyou.txt  
 ![alt text](./img/guard11.PNG?raw=true)  
 
