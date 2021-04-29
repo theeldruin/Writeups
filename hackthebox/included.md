@@ -59,8 +59,8 @@ For a better explanation check this [link](https://www.hackingarticles.in/lxd-pr
 > In your machine:  
 git clone  https://github.com/saghul/lxd-alpine-builder.git  
 cd lxd-alpine-builder  
-./build-alpine
-check the name of the created file
+./build-alpine  
+check the name of the created file  
 sudo python3 -m http.server 80  
 
 > On target machine  
