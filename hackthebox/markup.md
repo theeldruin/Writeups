@@ -35,7 +35,6 @@ To test this let's start burpsuite, capture the order request and send to repeat
 ![alt text](./img/markup09.PNG?raw=true)  
 
 Now we inject an XXE payload to test the XXE vuln  
-<!DOCTYPE foo [ <!ENTITY xxe SYSTEM 'file:///c:/windows/win.ini'> ]>  
 ![alt text](./img/markup10.PNG?raw=true)  
 
 Send the request and check the response  
