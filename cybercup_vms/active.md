@@ -54,9 +54,8 @@ Use the credentials admin:admin
 Ready, now we have an webshell  
 ![alt text](./img/active15.PNG?raw=true)  
 
-## Privesc
-
-The dir command doesn’t work. But running whoami we discover we are system:  
+## Privesc  
+Running whoami we discover we are system:  
 ![alt text](./img/active16.PNG?raw=true)  
 
 We already have system, however the dir command doesn’t work. So let’s try to get a shell or more information…  
