@@ -32,7 +32,7 @@ Let’s try to find exploit to them…
 ![alt text](./img/active11.PNG?raw=true)  
 ![alt text](./img/active12.PNG?raw=true)  
 
-We don’t find to this version of Jetty, however to ActiveMQ we have some. Let’s read the 40857.txt
+We didn't found an exploit for this version of Jetty, however to ActiveMQ we have some. Let’s read the 40857.txt
 
 searchsploit -x windows/remote/40857.txt  
 ![alt text](./img/active13.PNG?raw=true)  
