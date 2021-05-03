@@ -62,7 +62,7 @@ We already have system, however the dir command doesn’t work. So let’s try t
 ![alt text](./img/active17.PNG?raw=true)  
 ![alt text](./img/active18.PNG?raw=true)  
 
-Ok, i had some problems to run some commands. So i uploaded another .jsp webshell with the above code:  
+Ok, i had some problems to run some commands and get shell. So i uploaded another .jsp webshell with the above code:  
 PS: On kali is the same code of the file /usr/share/webshells/jsp/cmdjsp.jsp  
 ![alt text](./img/active25.PNG?raw=true)  
 
