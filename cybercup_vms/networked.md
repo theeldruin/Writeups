@@ -26,8 +26,10 @@ Great, so we are the user mario, let’s try other commands
 ![alt text](./img/networked07.PNG?raw=true)  
   
 So we can execute powershell commands. Let’s try something sneaky :D  
-I failed using the exploit to get a reverse shell….so i study the code  
-It connect to the target on port 8021, then send the as credential the default password of FreeSwitch and give 2 new lines (enter)  
+![alt text](./img/networked22.PNG?raw=true)  
+Damm.... Since we failed using the exploit to get a reverse shell…let's study it  
+
+It connect to the target on port 8021, then send as credential the default password of FreeSwitch and give 2 new lines (\n\n = 2 enters)  
 ![alt text](./img/networked08.PNG?raw=true)  
   
 So i tried this with netcat  
