@@ -34,15 +34,15 @@ searchsploit -x windows/remote/49584.py
   
 Reading the code we discover it use a similar syntax with metasploit. It mount an powershell reverse shell command, encoded it on base64, send it to the target and start a netcat listener to receive the reverse shell.
 
-So let’s adjust those variables and try to run the code
-searchsploit -m windows/remote/49584.py
+So let’s adjust those variables and try to run the code  
+searchsploit -m windows/remote/49584.py  
 subl 49584.py (you can use nano too)  
 ![alt text](./img/xapp10.PNG?raw=true)  
 
-lhost = your IP
-lport = your PORT, where you will receive the reverse shell
-rhost = target host
-rport = target port
+> lhost = your IP  
+lport = your PORT, where you will receive the reverse shell  
+rhost = target host  
+rport = target port  
 
 Everything set, let’s run it with “python3 49584.py”  
 ![alt text](./img/xapp11.PNG?raw=true)  
