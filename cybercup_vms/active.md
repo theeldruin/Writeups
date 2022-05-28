@@ -82,3 +82,5 @@ type c:\Users\public\user.txt
 
 type c:\Users\Administrador.WIN-439TMFLJJ23\root.txt.txt  
 ![alt text](./img/active24.PNG?raw=true)  
+
+()

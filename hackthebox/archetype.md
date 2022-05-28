@@ -54,5 +54,3 @@ Ok, another credential. Let’s try to use it with smbclient
 ## Discoveries
 Credentials:  
 - administrator:MEGA*******
-
-
