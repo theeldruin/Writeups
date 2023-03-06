@@ -20,7 +20,7 @@ Acessei os links para confirmar novamente que estavam disponíveis
 # Exploração
 O restante da exploração foi simples, simplesmente loguei em uma conta no Amazon AWS e criei 2 buckets com os mesmos nomes encontrados anteriormente.
 
-Adicionei neles um arquivo poc.html e VOILÁ
+Adicionei neles um arquivo poc.html e VOILÁ  
 ![](./images/Pasted%20image%2020230306100932.png)
 
 ![](./images/Pasted%20image%2020230306100954.png)
