@@ -7,25 +7,25 @@ Depois de identificar todos os subdominios procurei pelos arquivos robots.txt. A
 
 # Identificando a vulnerabildiade
 Parei para ler e ver o porque de ser tão grande, identifiquei que essa resposta tinha 3 cabeçalhos de políticas de segurança (CSP). Os 3 eram iguais mas nas URLs dentro deles achei alguns links s3
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100240.png)
+![](./images/Pasted%20image%2020230306100240.png)
 
 Extrai eles para um arquivo teste.txt e utilizei o nuclei para testar por subdomain takeover
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100402.png)
+![](./images/Pasted%20image%2020230306100402.png)
 
 Acessei os links para confirmar novamente que estavam disponíveis
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100642.png)
+![](./images/Pasted%20image%2020230306100642.png)
 
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100721.png)
+![](./images/Pasted%20image%2020230306100721.png)
 
 # Exploração
 O restante da exploração foi simples, simplesmente loguei em uma conta no Amazon AWS e criei 2 buckets com os mesmos nomes encontrados anteriormente.
 
 Adicionei neles um arquivo poc.html e VOILÁ
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100932.png)
+![](./images/Pasted%20image%2020230306100932.png)
 
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306100954.png)
+![](./images/Pasted%20image%2020230306100954.png)
 
 # Report
 Com essas evidências reportei meus achados na plataforma onde a mesma foi aceita.
-![](Writeups/Bugbounty/images/Pasted%20image%2020230306175140.png)
+![](./images/Pasted%20image%2020230306175140.png)
 
